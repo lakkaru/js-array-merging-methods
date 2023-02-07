@@ -34,3 +34,20 @@ arr2.forEach(val=>{
 console.log(arrReq2); // (7) [10, 20, 30, 40, 50, 60, 70]
 arrReq2.push(80);
 console.log(arrReq2); // (8) [10, 20, 30, 40, 50, 60, 70, 80]
+
+// Method 3 - splice
+const arrReq3=[];
+arrReq3.splice(1,0, 10);
+console.log(arrReq3); // [10]
+arr1.forEach((val, key) => {
+    arrReq3.splice(key+1, 0, val);
+});
+console.log(arrReq3); // (4) [10, 20, 30, 40]
+arrReq3.splice(4,0, 50); 
+console.log(arrReq3); // (5) [10, 20, 30, 40, 50]
+arr2.forEach(val => {
+    arrReq3.splice(arrReq3.length+1, 0, val);
+});
+console.log(arrReq3); // (7) [10, 20, 30, 40, 50, 60, 70]
+arrReq3.splice(7,0, 80); 
+console.log(arrReq3); // (8) [10, 20, 30, 40, 50, 60, 70, 80]
