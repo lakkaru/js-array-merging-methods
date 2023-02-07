@@ -77,3 +77,7 @@ arrReq5.copyWithin(1,0,3);
 console.log(arrReq5);//(8) [20, 20, 30, 40, 50, 60, 70, 80]
 arrReq5 = Object.assign(arrReq5, [10]);
 console.log(arrReq5);// (8) [10, 20, 30, 40, 50, 60, 70, 80]
+
+//Method 6- spread operator
+const arrReq6=[10, ...arr1, 50, ...arr2, 80];
+console.log(arrReq6);//(8) [10, 20, 30, 40, 50, 60, 70, 80]
