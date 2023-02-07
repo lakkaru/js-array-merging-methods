@@ -51,3 +51,9 @@ arr2.forEach(val => {
 console.log(arrReq3); // (7) [10, 20, 30, 40, 50, 60, 70]
 arrReq3.splice(7,0, 80); 
 console.log(arrReq3); // (8) [10, 20, 30, 40, 50, 60, 70, 80]
+
+// Method 4 - concat()
+let arrReq4=[];
+arrReq4= arrReq4.concat(10, arr1, 50, arr2, 80);
+console.log(arrReq4);// (8) [10, 20, 30, 40, 50, 60, 70, 80]
+
